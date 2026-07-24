@@ -128,7 +128,9 @@ ufbt launch       # build, install to /ext/apps/GPIO/, and run (quit qFlipper fi
 ```
 
 ## Project commentary
-This is the second Flipper Zero app I built with Claude Opus 4.8, right on the heels of [picflipper](https://github.com/picflipper) project. This went much smoother although, Claude still tried to call it quits when it got stuck, which would simply just be that it didn't have enough direction or information on what to do next, which is on me. I also figured out that less information is sometimes better, less to get distracted by, and fewer rabbit holes to go down. 
+This is the second Flipper Zero app I built with Claude Opus 4.8, right on the heels of [picflipper](https://github.com/picflipper) project. This time around I didn't necessarily need to build this tool since there are other SPI readers on the Flipper. I built this mainly as a learning exercise.
+
+This time, the project went much smoother even though, Claude still tried to call it quits when it got stuck, which would simply just be that it didn't have enough direction or information on what to do next, which is on me. I also figured out that less information is sometimes better, less to get distracted by, and fewer rabbit holes to go down. 
 
 After my experience with the picflipper app, the tendency to rabbit hole was immediately evident after 2 or so attempts at a problem, where it insisted on needing the same information I already provided, just slightly different or incremental in nature. I simply just plain refused and told it to stop being lazy and use what it already has. 
 

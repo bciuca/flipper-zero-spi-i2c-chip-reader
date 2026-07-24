@@ -1,0 +1,19 @@
+# SPI-I2C Chip Reader for Flipper Zero.
+# SPDX-License-Identifier: MIT
+# [MIT](LICENSE) Copyright (c) 2026, BC (https://github.com/bciuca).
+
+App(
+    appid="spi_i2c_chip_reader",
+    name="SPI-I2C Chip Reader",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="spi_i2c_chip_reader_app",
+    fap_icon="assets/icon.png", # 10x10 1-bit: 8-pin SOIC/DIP chip silhouette
+    fap_icon_assets="assets/images", # wiring_diagram.png -> I_wiring_diagram (SPI); wiring_diagram_i2c.png -> I_wiring_diagram_i2c (I2C)
+    requires=["gui", "storage"],
+    stack_size=8 * 1024,
+    fap_category="GPIO",
+    fap_version="3.0",
+    fap_description="Read-only EEPROM/flash dumper over the external bus. SPI: auto-detects + dumps Microchip 25AA32A (4KB EEPROM) and SST SST25VF040B (512KB NOR flash). I2C: dumps Microchip 24LC16B (2KB EEPROM, pins 15/16).",
+    fap_author="BC (github.com/bciuca)",
+    fap_weburl="https://github.com/bciuca/eeprom-25AA32A-reader",
+)

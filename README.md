@@ -128,14 +128,7 @@ ufbt launch       # build, install to /ext/apps/GPIO/, and run (quit qFlipper fi
 ```
 
 ## Project commentary
-This is the second Flipper Zero app I built with Claude Opus 4.8, right on the heels of [picflipper](https://github.com/picflipper) project. This time around I didn't necessarily need to build this tool since there are other SPI readers on the Flipper. I built this mainly as a learning exercise.
-
-This time, the project went much smoother even though, Claude still tried to call it quits when it got stuck, which would simply just be that it didn't have enough direction or information on what to do next, which is on me. I also figured out that less information is sometimes better, less to get distracted by, and fewer rabbit holes to go down. 
-
-After my experience with the picflipper app, the tendency to rabbit hole was immediately evident after 2 or so attempts at a problem, where it insisted on needing the same information I already provided, just slightly different or incremental in nature. I simply just plain refused and told it to stop being lazy and use what it already has. 
-
-The trickier part of this project is the hands on dependencies of connecting the chip to the Flipper. I had to get a SOIC-8 chip clip and make sure I get all the contacts on just right. The way the eeprom chip was mounted on the board, the leads were occluded by other compnents so I was never really sure I got the clip on right. Several hours were wasted by following Claude blindly in the wiring from the chip to the GPIO pins on the Flipper. At one point, I had asked it to draw me the diagram of the chip and number each lead. For some reason it hallucinated the wrong lead order and orientation and insisting I was wrong. The arguing was surprising. I'm used to it usually admiting fault (even when not in the wrong sometimes). I had to point it to the chip data sheet and prove what I had on my board with a photo of the chip.
-
+This is the second Flipper Zero app I built with Claude Opus 4.8, right on the heels of [picflipper](https://github.com/picflipper) project. I didn't necessarily need to build this tool since there are other SPI readers available for the Flipper Zero. I built this mainly as a learning exercise (and a test of patience with Claude's insufferable prose).
 
 
 ## License
